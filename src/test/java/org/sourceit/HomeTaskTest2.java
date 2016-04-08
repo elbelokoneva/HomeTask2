@@ -7,62 +7,62 @@ public class HomeTaskTest2 {
 
     @Test
     public void testDecimalToBinary1() {
-        Assert.assertEquals(HomeTask2.decimalToBinary(2), 10L);
+        Assert.assertEquals(HomeTask2.binar(2), 10L);
     }
 
     @Test
     public void testDecimalToBinary2() {
-        Assert.assertEquals(HomeTask2.decimalToBinary(100), 1100100L);
+        Assert.assertEquals(HomeTask2.binar(100), 1100100L);
     }
 
     @Test
     public void testDecimalToOctal1() {
-        Assert.assertEquals(HomeTask2.decimalToOctal(2), 2);
+        Assert.assertEquals(HomeTask2.oktal(2), 2);
     }
 
     @Test
     public void testDecimalToOctal2() {
-        Assert.assertEquals(HomeTask2.decimalToOctal(100), 144);
+        Assert.assertEquals(HomeTask2.oktal(100), 144);
     }
 
     @Test
     public void testDecimalToHex1() {
-        Assert.assertEquals(HomeTask2.decimalToHex(2), 2);
+        Assert.assertEquals(HomeTask2.hex(2), 2);
     }
 
     @Test
     public void testDecimalToHex2() {
-        Assert.assertEquals(HomeTask2.decimalToHex(100), 64);
+        Assert.assertEquals(HomeTask2.hex(100), 64);
     }
 
     @Test
     public void testBinaryToDecimal1() {
-        Assert.assertEquals(HomeTask2.binaryToDecimal(10), 2);
+        Assert.assertEquals(HomeTask2.BinToDec(10), 2);
     }
 
     @Test
     public void testBinaryToDecimal2() {
-        Assert.assertEquals(HomeTask2.binaryToDecimal(1100100L), 100);
+        Assert.assertEquals(HomeTask2.BinToDec(1100100L), 100);
     }
 
     @Test
     public void testOctalToDecimal1() {
-        Assert.assertEquals(HomeTask2.octalToDecimal(2), 2);
+        Assert.assertEquals(HomeTask2.OktToDec(2), 2);
     }
 
     @Test
     public void testOctalToDecimal2() {
-        Assert.assertEquals(HomeTask2.octalToDecimal(144), 100);
+        Assert.assertEquals(HomeTask2.OktToDec(144), 100);
     }
 
     @Test
     public void testHexToDecimal1() {
-        Assert.assertEquals(HomeTask2.hexToDecimal(2), 2);
+        Assert.assertEquals(HomeTask2.HexToDec(2), 2);
     }
 
     @Test
     public void testHexToDecimal2() {
-        Assert.assertEquals(HomeTask2.hexToDecimal(64), 100);
+        Assert.assertEquals(HomeTask2.HexToDec(64), 100);
     }
 
     @Test
@@ -74,6 +74,7 @@ public class HomeTaskTest2 {
             Assert.assertEquals(array[i].length, j);
         }
     }
+
 
     @Test
     public void testFindMaxProduct1() {
@@ -111,6 +112,7 @@ public class HomeTaskTest2 {
                 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
         Assert.assertEquals(HomeTask2.getSimple(100), simple);
     }
+
 
     @Test
     public void testSum1() {
